@@ -60,3 +60,43 @@ th { background: rgba(50,0,90,0.6); }
   z-index:-1;
 }
 @keyframes pulse { from {opacity:.6;} to {opacity:1;} }
+
+footer.abyss-link {
+  margin-top: 4em;
+  text-align: center;
+  padding: 2em 0;
+  border-top: 1px solid rgba(100,0,200,0.3);
+}
+
+footer.abyss-link p {
+  font-style: italic;
+  color: #9f8aff;
+  margin-bottom: 1em;
+  animation: glowtext 4s ease-in-out infinite alternate;
+}
+
+@keyframes glowtext {
+  from { text-shadow: 0 0 5px #4b00ff; }
+  to { text-shadow: 0 0 25px #8a63ff; }
+}
+
+.void-button {
+  color: #d8ccff;
+  text-decoration: none;
+  border: 1px solid #5a3fff;
+  padding: 0.8em 1.6em;
+  border-radius: 10px;
+  background: rgba(10,0,40,0.6);
+  transition: 0.3s;
+  animation: glowbutton 5s ease-in-out infinite alternate;
+}
+
+.void-button:hover {
+  background: #3c00ff;
+  box-shadow: 0 0 20px #4500ff;
+}
+
+@keyframes glowbutton {
+  from { box-shadow: 0 0 10px #2b0099; }
+  to { box-shadow: 0 0 25px #7a33ff; }
+}
