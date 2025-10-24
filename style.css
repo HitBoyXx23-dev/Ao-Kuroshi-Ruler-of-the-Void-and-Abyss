@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Crimson+Text&display=swap');
+
+body {
+  margin: 0;
+  color: #d8ccff;
+  background: radial-gradient(circle at center, #040008 0%, #000 70%);
+  font-family: 'Crimson Text', serif;
+}
+
+.codex {
+  max-width: 900px;
+  margin: auto;
+  padding: 2em;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Cinzel Decorative', serif;
+  color: #8a63ff;
+  font-size: 3em;
+  text-shadow: 0 0 15px #3500ff;
+}
+
+h2 { color: #6f5be0; font-style: italic; margin-bottom: 2em; }
+
+h3 { color: #a589ff; margin-top: 2em; text-shadow: 0 0 8px #3000ff; }
+
+ul { list-style: none; padding: 0; }
+li::before { content: "🜂 "; color: #6030ff; }
+
+blockquote {
+  background: rgba(10,0,30,0.4);
+  border-left: 3px solid #5a00ff;
+  padding: 1em;
+  margin: 1em auto;
+  width: 80%;
+  border-radius: 6px;
+  font-style: italic;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
+}
+th, td { border: 1px solid #5a00ff; padding: 0.5em; }
+th { background: rgba(50,0,90,0.6); }
+
+#sigilCanvas {
+  width: 200px; height: 200px;
+  display: block;
+  margin: 3em auto;
+}
+
+#void-overlay {
+  position: fixed; top:0; left:0;
+  width:100%; height:100%;
+  background: radial-gradient(circle, rgba(40,0,80,0.15) 0%, transparent 70%);
+  animation: pulse 6s infinite alternate;
+  z-index:-1;
+}
+@keyframes pulse { from {opacity:.6;} to {opacity:1;} }
